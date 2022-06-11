@@ -1,9 +1,9 @@
 function showFunction() {
   var x = document.getElementById("nav-barID");
-  if (x.className === "nav-bar") { /* otvara hamburgerr */
+  if (x.className === "nav-bar") { 
     x.className += " responsive";
   } else {
-    x.className = "nav-bar"; /* mogucnost klikanja hamburgera da bi sakrio botune */
+    x.className = "nav-bar"; 
   }
 }
 
