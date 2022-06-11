@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beertija</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="beertija.css">
+  <script src="beertija.js"></script>
+</head>
+<body>
+  <section class="sec1">
+    <div class="background-image"></div>
+    <div class="title">
+      <a name="top"></a>
+      <h2>Beertija</h2>
+      <p>	"He who drinks beer sleeps well.<br> He who sleeps well cannot sin. <br>He who does not sin goes to heaven... <br><br>Amen."</p>
+    </div>
+    <div class="nav-bar" id="nav-barID"> <!-- nav-barID se koristi u js -->
+      <a href="#about">About us</a>
+      <a href="https://www.craftbeer.com/beer-styles">Craft Beer</a>
+      <a href="#reservations">Reservations</a>
+      <a href="#weekendEvents">Live Events</a>
+      <a href="javascript:void(0);" class="icon" onclick="showFunction()">  <!--  The javascript: part means the following part is coded in javascript and the void(0) is a statement that does nothing and returns undefined, in javascript. -->
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </section>
+<section class="sec2">
+  <div class="weekendEvents">
+    <a name="weekendEvents"></a>
+    <div class="weekTitle">
+      <h2>Karaoke night</h2>
+      <p>
+        You feel like you're really a part of a movement when you're singing Journey at a karaoke bar.
+        <br><br><br>10 P.M. Friday June 10th, 2022  @Beertija
+        <h3>Prizes</h3>
+        <ul>
+          <li>1st Place - 4 tickets for NBA game</li><br>
+          <li>2nd Place - 4 person dinner and bottle of wine</li><br>
+          <li>3rd Place - Bottle of Jack Daniels @beertija</li><br>
+          <li>Lucky Looser - 4 tequila shots</li><br>
+        </ul>
+      </p>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="container">
+    <a name="reservations"></a>
+    <fieldset class="form">
+      <legend>Reservation info</legend>
+      <br>Contact Name:<br>
+      <input type="text" name="korisnickoIme" placeholder="Enter Reservation Name" required maxlength="15">
+      <br><br/>Contact Number:<br>
+      <input type="tel" name="phone" placeholder="Enter Contact Number"  pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" minlength="9" maxlength="10">
+      <small>(Don't use white spaces)</small>
+      <br><br/>When can we call you:<br>
+      <input type="time" id="res-time" min="10:30" max="16:00" required>
+      <small>(Available 10:30am - 16:00pm)</small>
+      <br><br>I'm 18+
+      <input type="checkbox" >
+      <input type="submit" value="Submit" id="submit">
+      </fieldset>
+      <div class="backtotop">
+        <a href="#top">Back to page start</a>
+      </div>
+  </div>
+  <a name="about"></a>
+  <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.1837674343938!2d15.979586515025762!3d45.807577918487034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6f89e52ef35%3A0x4fa03287cbebbad8!2sThe%20Beertija!5e0!3m2!1shr!2shr!4v1654973006424!5m2!1shr!2shr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+
+</body>
+</html>

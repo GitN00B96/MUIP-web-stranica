@@ -1,0 +1,213 @@
+* {
+  margin: 0; /* maka san bile margine oko cijelog ekrana */
+  padding: 0;
+}
+
+
+.sec1 {
+  background-image: url("C:\\Users\\Mario\\Desktop\\stranica\\2.jpg");
+  background-size: cover; /* namista sliku da  nije onako zoomIn */
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.37;
+  background-attachment: fixed;
+}
+
+.sec2 {
+  background-image: url("C:\\Users\\Mario\\Desktop\\stranica\\3.jpg");
+  background-size:auto;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.37;
+  background-attachment: fixed;
+}
+
+
+body {
+  background-color: black; /* jer je slika bila presvijetla kad san koristia opacity */
+  color: white;
+}
+
+.nav-bar {
+  background-color: transparent;
+  height: 5%;
+}
+
+.nav-bar a {
+  float: right;
+  display: block;
+  color: azure;
+  text-align: center;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-size: 17px;
+  position:relative;
+  right:20px;
+  top: 25px;
+}
+
+
+.nav-bar a:hover {
+  color:black;
+  font-weight: bold;
+  background-color: rgb(254, 245, 188);
+  border-radius: 25px;
+}
+
+.nav-bar .icon {
+  display: none;
+}
+
+
+@media screen and (max-width: 750px) {
+  .nav-bar a {display: none;}
+  .nav-bar a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+
+@media screen and (max-width: 750px) {
+  .nav-bar.responsive {position: relative;}
+  .nav-bar.responsive a.icon {  /*  nastimavan da mi hover linija ne ide priko teksta */
+    position: center;
+    right: 0;
+    top: 0;
+  }
+  .nav-bar.responsive a { /* kako su prikazani botuni nakon klika na hamburger */
+    float: none;
+    display: block;
+    text-align: right;
+    
+  }
+  .nav-bar a:hover {
+    background-color: transparent;
+    border-radius: 25px;
+    color: white;
+  }
+  .nav-bar.responsive a.icon{
+    padding-right: 6.5%;
+    padding-top: 6%;
+  }
+  .nav-bar.responsive a:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0); /* da mi ne display-a nista dok ne hoveram */
+    height: 1px; /* debljina lajne */
+    bottom: 0;
+    left: 0;
+    background-color: rgb(254, 245, 188);
+    transform-origin:  left;
+    transition: transform 0.75s ease-out;
+  }
+  .nav-bar.responsive a:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+  .title p {
+    margin-top: 25%;
+  }
+}
+
+.title {
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  left: 0;
+  padding: 20px 22px;
+}
+
+.title p{
+  padding: 72.5px 22px;
+  font-size: 22px;
+  font-style: oblique;
+  color: white;
+}
+
+.title button {
+  padding: 2.5px 22px;
+}
+
+
+.weekendEvents {
+  background-image: url("C:\\Users\\Mario\\Desktop\\stranica\\6.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.weekTitle h2 {
+  font-size: 70px;
+  padding: 30px 30px;
+}
+
+.weekTitle h3{
+  font-size: 30px;
+  padding: 25px 30px;
+}
+
+.weekTitle p {
+  font-size: 20px;
+  padding: 25px 30px;
+}
+
+.weekTitle ul{
+  font-size: 20px;
+  padding: 1px 50px;
+  list-style-type: none;
+
+}
+
+.container {
+  background-image: url("C:\\Users\\Mario\\Desktop\\stranica\\6.jpg");
+  background-size: cover; /* namista sliku da  nije onako zoomIn */
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.35;
+  background-attachment: fixed;
+  padding-top: 90px;
+}
+
+
+.form {
+  color: white;
+  width: 300px;
+  padding-top: 0.4%;
+  padding-bottom: 1.4%;
+  padding-left: 2.2%;
+  margin-left: 50px;
+
+}
+
+.container legend {
+  font-size: 28px;
+}
+
+
+.container #submit {
+  padding: 4px 7px;
+  margin-left: 75%;
+}
+
+
+.backtotop a {
+  color: white;
+  margin-left: 50px;
+}
+
+html,body{
+    overflow-x: hidden;
+} 
+
+.map {
+  width: 1263px;
+  height: 550px;
+  position: center;
+}
